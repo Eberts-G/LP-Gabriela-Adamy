@@ -48,5 +48,8 @@ document.addEventListener('DOMContentLoaded', () => {
       header.style.boxShadow = 'none';
     }
   });
+document.querySelector('.menu-toggle').addEventListener('click', () => {
+  document.querySelector('.nav').classList.toggle('active');
+});
 
 });

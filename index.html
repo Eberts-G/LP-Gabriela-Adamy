@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,38 +9,43 @@
   <!-- Google Fonts: Playfair Display + Montserrat -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="assets/img/logo.png">
 </head>
+
 <body>
 
   <!-- Header / Navbar com efeito Glass -->
-  <header class="header" id="header">
-    <div class="container header-content">
-      <a href="#home" class="logo">
-        <img src="assets/img/logo.png" alt="Logo Dra. Gabriela Adamy" class="logo-img">
-        <div class="brand-text">
+  <header class="header">
+    <div class="header-content">
+      <!-- Logo -->
+      <a href="#" class="logo">
+        <img src="assets/img/logo.png" alt="Logo" class="logo-img">
+        <span class="brand-text">
           <span class="brand-title">Dra. Gabriela Adamy</span>
-          <span class="brand-subtitle">Médica e Nutróloga</span>
-        </div>
+          <span class="brand-subtitle">Nutrologia</span>
+        </span>
       </a>
 
-      <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir Menu">
-        <span></span><span></span><span></span>
-      </button>
+      <!-- Botão hamburguer (aparece só no mobile) -->
+      <button class="menu-toggle">☰</button>
 
-      <nav class="nav" id="nav-menu">
-        <a href="#home" class="nav-link">Início</a>
-        <a href="#servicos" class="nav-link">Áreas de Atuação</a>
+      <!-- Menu de navegação -->
+      <nav class="nav">
+        <a href="#inicio" class="nav-link">Início</a>
+        <a href="#atuacao" class="nav-link">Áreas de Atuação</a>
         <a href="#sobre" class="nav-link">Sobre</a>
-        <a href="#club" class="nav-link">Llérios Club</a>
+        <a href="#club" class="nav-link">Lírios Club</a>
         <a href="#depoimentos" class="nav-link">Depoimentos</a>
-        <a href="https://wa.me/5545999872288?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="nav-btn">Agendar Consulta</a>
+        <a href="#consulta" class="nav-btn">Agendar Consulta</a>
       </nav>
     </div>
   </header>
+
 
   <!-- Hero Section -->
   <section class="hero" id="home">
@@ -47,9 +53,11 @@
       <div class="hero-content reveal">
         <span class="badge">Atendimento Humanizado e Personalizado</span>
         <h1>Tratamento especializado para <em>Lipedema</em> e Saúde Integral</h1>
-        <p>Médica nutróloga focada no emagrecimento saudável, saúde metabólica e qualidade de vida com condutas baseadas em evidências científicas.</p>
+        <p>Médica nutróloga focada no emagrecimento saudável, saúde metabólica e qualidade de vida com condutas baseadas
+          em evidências científicas.</p>
         <div class="hero-actions">
-          <a href="https://wa.me/5545999872288?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="cta cta-primary">
+          <a href="https://wa.me/5545999872288?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank"
+            class="cta cta-primary">
             Agendar sua Consulta pelo WhatsApp
           </a>
           <a href="#servicos" class="cta cta-outline">Conheça os Tratamentos</a>
@@ -166,7 +174,7 @@
           </div>
         </div>
       </div>
-    </div>    
+    </div>
   </section>
 
   <!-- CTA Intermediário -->
@@ -175,7 +183,8 @@
       <div class="cta-card final-cta-card reveal">
         <h2>Atendimento também na Clínica Naoru</h2>
         <p>Consultas rápidas e acompanhamento especializado em Guaraniaçu e Cascavel.</p>
-        <a href="https://wa.me/5545999872288?text=Olá!%20Quero%20agendar%20consulta%20na%20Clínica%20Naoru" target="_blank" class="cta cta-primary">Falar com a Clínica Naoru</a>
+        <a href="https://wa.me/5545999872288?text=Olá!%20Quero%20agendar%20consulta%20na%20Clínica%20Naoru"
+          target="_blank" class="cta cta-primary">Falar com a Clínica Naoru</a>
       </div>
     </div>
   </section>
@@ -186,7 +195,8 @@
       <div class="club-card reveal">
         <div class="club-header">
           <h2>✨ Llérios Club</h2>
-          <p>Indique uma amiga para cuidar da saúde. Cada indicação convertida em consulta rende benefícios exclusivos para você.</p>
+          <p>Indique uma amiga para cuidar da saúde. Cada indicação convertida em consulta rende benefícios exclusivos
+            para você.</p>
         </div>
 
         <form class="form-indicacao" id="form-indicacao">
@@ -209,7 +219,8 @@
       <div class="section-header reveal">
         <h2>O que dizem os pacientes</h2>
         <p>Avaliações reais no Google Reviews ⭐⭐⭐⭐⭐</p>
-        <a href="https://www.google.com/maps/place/Dra+Gabriela+Adamy+Nutr%C3%B3loga+em+Cascavel+Emagrecimento+e+Lipedema/@-24.951991,-53.4809397,17z/data=!4m8!3m7!1s0x6062837644ccde53:0x239f126773989516!8m2!3d-24.951991!4d-53.4783648!9m1!1b1!16s%2Fg%2F11yzm60gv3?entry=ttu&g_ep=EgoyMDI2MDcyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="cta cta-primary reviews-btn">
+        <a href="https://www.google.com/maps/place/Dra+Gabriela+Adamy+Nutr%C3%B3loga+em+Cascavel+Emagrecimento+e+Lipedema/@-24.951991,-53.4809397,17z/data=!4m8!3m7!1s0x6062837644ccde53:0x239f126773989516!8m2!3d-24.951991!4d-53.4783648!9m1!1b1!16s%2Fg%2F11yzm60gv3?entry=ttu&g_ep=EgoyMDI2MDcyOS4wIKXMDSoASAFQAw%3D%3D"
+          target="_blank" class="cta cta-primary reviews-btn">
           Ver avaliações no Google
         </a>
       </div>
@@ -217,32 +228,38 @@
       <div class="depoimentos-grid">
         <div class="depoimento-card reveal">
           <div class="stars">★★★★★</div>
-          <p>"Atendimento fantástico! A Dra. Gabriela é extremamente atenciosa, ouve todas as queixas e explica tudo detalhadamente."</p>
+          <p>"Atendimento fantástico! A Dra. Gabriela é extremamente atenciosa, ouve todas as queixas e explica tudo
+            detalhadamente."</p>
           <span class="author">Dinora E. — Paciente</span>
         </div>
         <div class="depoimento-card reveal">
           <div class="stars">★★★★★</div>
-          <p>"Excelente profissional! O tratamento para o lipedema mudou minha qualidade de vida. Recomendo de olhos fechados."</p>
+          <p>"Excelente profissional! O tratamento para o lipedema mudou minha qualidade de vida. Recomendo de olhos
+            fechados."</p>
           <span class="author">Eneida R. — Paciente</span>
         </div>
         <div class="depoimento-card reveal">
           <div class="stars">★★★★★</div>
-          <p>"Consulta completa e acolhedora. A conduta rápida e objetiva trouxe resultados que eu não conseguia há anos."</p>
+          <p>"Consulta completa e acolhedora. A conduta rápida e objetiva trouxe resultados que eu não conseguia há
+            anos."</p>
           <span class="author">Rafaela K. — Paciente</span>
         </div>
         <div class="depoimento-card reveal">
           <div class="stars">★★★★★</div>
-          <p>"Experiência maravilhosa. Doutora ouviu minhas queixas e já passou o melhor tratamento. Me sinto super bem após sua sua consulta, super indico... 🥰"</p>
+          <p>"Experiência maravilhosa. Doutora ouviu minhas queixas e já passou o melhor tratamento. Me sinto super bem
+            após sua sua consulta, super indico... 🥰"</p>
           <span class="author">Paciente — Avaliação</span>
         </div>
         <div class="depoimento-card reveal">
           <div class="stars">★★★★★</div>
-          <p>"Atendimento impecável. A Dra. Gabriela me ajudou a entender meu corpo e a construir um plano realista para meu emagrecimento."</p>
+          <p>"Atendimento impecável. A Dra. Gabriela me ajudou a entender meu corpo e a construir um plano realista para
+            meu emagrecimento."</p>
           <span class="author">Mariana S. — Paciente</span>
         </div>
         <div class="depoimento-card reveal">
           <div class="stars">★★★★★</div>
-          <p>"Profissional muito dedicada e carinhosa. Meu caso foi tratado com seriedade e recebi orientações claras em cada consulta."</p>
+          <p>"Profissional muito dedicada e carinhosa. Meu caso foi tratado com seriedade e recebi orientações claras em
+            cada consulta."</p>
           <span class="author">Larissa F. — Paciente</span>
         </div>
       </div>
@@ -261,16 +278,19 @@
       </div>
       <div class="sobre-info reveal">
         <h2>Atendimento Individualizado e Humanizado</h2>
-        <p class="lead">Dra. Gabriela Adamy é médica dedicada à saúde integral, ao emagrecimento sustentável e ao tratamento especializado do lipedema.</p>
-        <p>Sua prática clínica combina evidências científicas atualizadas com uma escuta atenta, considerando o histórico biológico, hábitos de vida e os objetivos de cada paciente.</p>
-        
+        <p class="lead">Dra. Gabriela Adamy é médica dedicada à saúde integral, ao emagrecimento sustentável e ao
+          tratamento especializado do lipedema.</p>
+        <p>Sua prática clínica combina evidências científicas atualizadas com uma escuta atenta, considerando o
+          histórico biológico, hábitos de vida e os objetivos de cada paciente.</p>
+
         <ul class="diferenciais-list">
           <li><strong>Ciência e Segurança:</strong> Condutas baseadas em protocolos atualizados.</li>
           <li><strong>Ecosistema Integrado:</strong> Foco em nutrição, metabolismo e bem-estar físico.</li>
           <li><strong>Suporte Contínuo:</strong> Acompanhamento próximo ao longo de todo o plano de tratamento.</li>
         </ul>
 
-        <a href="https://wa.me/5545999872288?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="cta cta-primary">Falar com a Equipe</a>
+        <a href="https://wa.me/5545999872288?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank"
+          class="cta cta-primary">Falar com a Equipe</a>
       </div>
     </div>
   </section>
@@ -293,10 +313,19 @@
             <p><strong>(45) 99987-2299</strong><br>Parque São Paulo, Cascavel.</p>
           </div>
         </div>
-        <a href="https://wa.me/5545999872288?text=Olá!%20Quero%20consultar%20a%20Clínica%20Naoru" target="_blank" class="cta cta-outline cta-localizacao">Fale com a equipe da Dra. Gabriela</a>
+        <a href="https://wa.me/5545999872288?text=Olá!%20Quero%20consultar%20a%20Clínica%20Naoru" target="_blank"
+          class="cta cta-outline cta-localizacao">
+          Fale com a equipe da Dra. Gabriela
+        </a>
+
+        <a href="https://wa.me/5545999872288?text=Olá!%20Quero%20consultar%20a%20Clínica%20Llérios%20em%20Cascavel"
+          target="_blank" class="cta cta-outline cta-localizacao">
+          Fale com a Clínica Llérios - Cascavel
+        </a>
       </div>
       <div class="localizacao-map reveal">
-        <iframe src="https://www.google.com/maps?q=-24.951991,-53.4783648&hl=pt-BR&z=15&output=embed" width="100%" height="100%" style="border:0; min-height: 320px;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps?q=-24.951991,-53.4783648&hl=pt-BR&z=15&output=embed" width="100%"
+          height="100%" style="border:0; min-height: 320px;" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </div>
   </section>
@@ -307,7 +336,8 @@
       <div class="final-cta-card reveal">
         <h2>Pronta para transformar sua saúde?</h2>
         <p>Fale com a Clínica Naoru agora e agende sua primeira avaliação com a Dra. Gabriela Adamy.</p>
-        <a href="https://wa.me/5545999872288?text=Olá!%20Quero%20agendar%20consulta%20com%20a%20Dra.%20Gabriela%20Adamy" target="_blank" class="cta cta-primary">Agendar pelo WhatsApp</a>
+        <a href="https://wa.me/5545999872288?text=Olá!%20Quero%20agendar%20consulta%20com%20a%20Dra.%20Gabriela%20Adamy"
+          target="_blank" class="cta cta-primary">Agendar pelo WhatsApp</a>
       </div>
     </div>
   </section>
@@ -325,4 +355,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>

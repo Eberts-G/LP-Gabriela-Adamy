@@ -58,6 +58,7 @@ h1 em {
   top: 0;
   left: 0;
   width: 100%;
+  height: 70px;
   background: rgba(247, 249, 244, 0.85);
   backdrop-filter: blur(12px);
   z-index: 1000;
@@ -146,8 +147,19 @@ h1 em {
   background: linear-gradient(to left, rgba(74,107,53,0.6), transparent),
               url('assets/img/Heroimg.png') no-repeat center center fixed;
   background-size: cover;
+  background-repeat: no-repeat;
   color: #fff;
   padding: 120px 60px;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    background: url('assets/img/Heroimg.png') no-repeat left center fixed;
+    background-size: cover; /* mostra inteira em telas menores */
+    background-repeat: no-repeat;
+    align-items: flex-end; /* joga o texto para baixo */
+    padding-bottom: 40px;  /* espaço entre texto e borda */
+  }
 }
 
 .hero-content {
@@ -560,14 +572,37 @@ h1 em {
 /* ===== FOOTER ===== */
 .footer {
   background-color: var(--text-dark);
+  height: auto;              /* altura menor */
   color: #fff;
-  padding: 40px 0;
+  padding: 12 20px;           /* só espaço lateral */
 }
 
 .footer-content {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between; /* texto distribuído esquerda/direita */
+  align-items: center;            /* centraliza verticalmente */
+  flex-wrap: wrap;                /* permite quebrar em telas menores */
+  gap: 12px;                       /* espaço entre elementos */
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* empilha os elementos */
+    text-align: center;     /* centraliza no mobile */
+  }
+}
+
+.footer-brand h3 {
+  color: #fff; /* deixa o nome branco */
+  font-family: var(--font-serif); /* opcional: fonte elegante */
+  font-size: 18px; /* ajuste conforme desejar */
+  margin: 0; /* remove espaçamento extra */
+}
+
+.footer-brand p {
+  color: var(--accent); /* usa o verde claro suave para contraste */
+  font-size: 14px;
+  margin: 0;
 }
 
 /* ===== ANIMAÇÃO DE REVELAÇÃO ===== */
@@ -580,6 +615,38 @@ h1 em {
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* aparece só no mobile */
+  }
+
+  .nav {
+    display: none; /* escondido por padrão */
+    flex-direction: column;
+    gap: 16px;
+    background: var(--bg-light);
+    padding: 20px;
+    position: absolute;
+    top: 70px; /* abaixo do header */
+    right: 0;
+    width: 100%;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .nav.active {
+    display: flex; /* aparece quando ativo */
+  }
 }
 
 /* RESPONSIVO */
