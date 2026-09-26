@@ -18,21 +18,21 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
+  height: 100%;
   font-family: var(--font-sans);
   background-color: var(--bg-light);
   color: var(--text-dark);
   line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* ocupa todo o espaço disponível */
 }
 
 html {
   scroll-behavior: smooth;
-}
-
-body {
-  font-family: var(--font-sans);
-  background-color: var(--bg-light);
-  color: var(--text-dark);
-  line-height: 1.6;
 }
 
 .container {
@@ -574,7 +574,8 @@ h1 em {
   background-color: var(--text-dark);
   height: auto;              /* altura menor */
   color: #fff;
-  padding: 12 20px;           /* só espaço lateral */
+  padding: 12px 20px;           /* só espaço lateral */
+  margin-top: auto;
 }
 
 .footer-content {
